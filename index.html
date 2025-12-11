@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MaxCoder - Vibe Coding</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              fredoka: ['Fredoka', 'sans-serif'],
+              comic: ['Comic Neue', 'sans-serif'],
+            },
+            colors: {
+              toon: {
+                bg: '#FFFFFF',
+                dark: '#000000',
+                cyan: '#00F0FF',
+                purple: '#B026FF',
+                green: '#00FF94',
+                yellow: '#FFD600',
+                pink: '#FF005C'
+              }
+            },
+            boxShadow: {
+              'hard': '6px 6px 0px 0px rgba(0,0,0,1)',
+              'hard-sm': '3px 3px 0px 0px rgba(0,0,0,1)',
+              'hard-lg': '10px 10px 0px 0px rgba(0,0,0,1)',
+            },
+            animation: {
+              'bounce-slow': 'bounce 3s infinite',
+              'float': 'float 3s ease-in-out infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        background-color: #FFFFFF;
+        background-image: radial-gradient(#000000 2px, transparent 2px);
+        background-size: 30px 30px;
+        color: #000000;
+        font-family: 'Comic Neue', sans-serif;
+        overflow-x: hidden;
+      }
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 12px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #000000;
+        border-left: 2px solid black;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #00FF94;
+        border: 2px solid black;
+        border-radius: 0px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #FFD600;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.2/",
+    "three": "https://esm.sh/three@0.160.0",
+    "three/addons/": "https://esm.sh/three@0.160.0/examples/jsm/",
+    "react/": "https://esm.sh/react@^19.2.2/",
+    "react": "https://esm.sh/react@^19.2.2",
+    "three/": "https://esm.sh/three@^0.182.0/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

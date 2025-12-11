@@ -1,0 +1,8 @@
+{
+  "name": "MaxCoder",
+  "description": "A gamified, AI-powered space academy for kids to learn coding.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
